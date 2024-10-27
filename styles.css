@@ -1,0 +1,229 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #ff6600;
+    --secondary-bg: #252525;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--secondary-bg);
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    background-image: url('assets/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff8533;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--secondary-bg);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ... (keep existing styles) ... */
+
+/* ... (keep existing styles) ... */
+
+.news-carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.news-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.news-card {
+    flex: 0 0 auto;
+    width: calc(33.333% - 20px);
+    margin-right: 20px;
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.news-link {
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover {
+    color: #ff8533;
+}
+
+@media (max-width: 768px) {
+    .news-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .news-card {
+        width: calc(100% - 20px);
+    }
+}
+
+/* ... (keep existing styles) ... */
+
+
+/* ... (keep existing styles) ... */
